@@ -1,0 +1,30 @@
+
+This is a basic implementation of node js HTTP server and client. HTTP server listens on port 8124 and accept request
+to fetch information on weather. On receiving requests, it creates HTTP client internally which invoke weather ground
+API to fetch weather data for given state and city. Once weather data is received, it creates a HTML table and publishes
+this data to local client.
+
+Files:
+
+1. Server.js -- contains implementation for HTTP client and server.
+2. package.json
+
+Launching the program:
+
+1. Perform npm install to install dependencies and libraries.
+
+
+Usage:
+
+1. http://localhost:8124/Weather?state=All&city=All
+
+Gives you data for four cities:
+
+Campbell, CA
+Austin, TX
+Timonium, MD
+Omaha, NE
+
+2. http://localhost:8124/Weather?state=CA&city=Campbell
+
+Gives you data for Campbell, CA.
