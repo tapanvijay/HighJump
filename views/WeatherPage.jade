@@ -1,0 +1,21 @@
+// Created by tapan on 7/1/2014.
+extend layout
+block content
+    table(border='30', cellpadding='10', cellspacing='3', bordercolor='00FF00')
+        thead
+        tr
+            th Location
+            th Weather
+            th Temperature
+            th Feel Temperature
+            th Humidity
+            th Update Time
+        tbody
+            each weatherObj, location in weatherData
+                tr
+                    td #{location}
+                    td #{weatherObj.weather}
+                    td #{weatherObj.temp}
+                    td #{weatherObj.feel_temp}
+                    td #{weatherObj.humidity}
+                    td #{weatherObj.time}
